@@ -2,6 +2,9 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import SignOutButton from "@/components/admin/SignOutButton";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 const NAV_BUILT = [
   { href: "/admin", label: "داشبورد" },
   { href: "/admin/homepage", label: "صفحه اصلی / درباره من / Showreel" },
