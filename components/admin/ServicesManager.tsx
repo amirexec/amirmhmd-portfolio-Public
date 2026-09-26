@@ -43,9 +43,9 @@ export default function ServicesManager({ initialItems }: { initialItems: Servic
     setSaving(true);
     const payload = {
       title: form.title,
-      description: form.description || undefined,
-      ctaLabel: form.ctaLabel || undefined,
-      ctaUrl: form.ctaUrl || undefined,
+      description: form.description || null,
+      ctaLabel: form.ctaLabel || null,
+      ctaUrl: form.ctaUrl || null,
       mediaId: form.media?.id ?? null,
     };
 
