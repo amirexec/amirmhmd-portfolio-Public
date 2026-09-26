@@ -42,9 +42,9 @@ export default function TestimonialsManager({ initialItems }: { initialItems: Te
     setSaving(true);
     const payload = {
       clientName: form.clientName,
-      company: form.company || undefined,
+      company: form.company || null,
       quote: form.quote,
-      project: form.project || undefined,
+      project: form.project || null,
       photoId: form.photo?.id ?? null,
     };
 
